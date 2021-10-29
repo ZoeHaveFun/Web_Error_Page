@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Founf Page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        html,
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            background-color: #33415c;
+        }
+
+        #app {
+            width: 1000px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #app>img {
+            width: 500px;
+        }
+
+        #app>div {
+            width: 600px;
+        }
+
+        h1 {
+            font-size: 4em;
+            color: #ecc41d;
+            text-align: center;
+            font-size: 60px;
+            letter-spacing: .4rem;
+            margin-bottom: 8px;
+            text-shadow: #333 0.1em 0.1em 0.2em;
+            animation: animate 0.5s linear infinite;
+        }
+
+        p {
+            color: #e0bc2b;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: .08rem;
+            animation: animate 0.5s linear infinite;
+        }
+        h1,
+        p {
+            font-family: sans-serif;
+            animation: animate 0.5s linear infinite;
+        }
+        @keyframes animate {
+
+            0%,
+            100% {
+                text-shadow: -1.5px -1.5px 0 #0ff, 1.5px 1.5px 0 #f00;
+            }
+
+            25% {
+                text-shadow: 1.5px 1.5px 0 #0ff, -1.5px -1.5px 0 #f00;
+            }
+
+            50% {
+                text-shadow: 1.5px -1.5px 0 #0ff, 1.5px -1.5px 0 #f00;
+            }
+
+            75% {
+                text-shadow: -1.5px 1.5px 0 #0ff, -1.5px 1.5px 0 #f00;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <img src="./assets/img/NotFoundPic.png" alt="">
+        <div>
+            <h1>生人迴避</h1>
+            <p>這裡是神秘的404區，我們不歡迎訪客。您可能點了錯誤的連結，或是輸入了無效的網址，請您再次確認。希望我們不要再見，不然會發生什麼事...我們也不知道 :)</p>
+        </div>
+    </div>
+</body>
+
+</html>
